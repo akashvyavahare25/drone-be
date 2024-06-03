@@ -1,0 +1,54 @@
+<style type="text/css">
+    .detailHeading {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    a.button {
+        display: block;
+        position: relative;
+        float: left;
+        width: 120px;
+        padding: 0;
+        margin: 10px 20px 10px 0;
+        font-weight: 600;
+        text-align: center;
+        line-height: 50px;
+        color: #FFF;
+        border-radius: 5px;
+        transition: all 0.2s;
+    }
+
+    .btnBlueGreen {
+        background: #00AE68;
+    }
+
+    .btnGray {
+        background: gray;
+    }
+</style>
+<div>
+    <div>
+        <span> Hi <%= receiverName %>
+            <span>
+    </div>
+    <br>
+    <div>
+        <span> <%= ownerName %> has submitted for <%= wfName %> request.
+        </span>
+    </div>
+    <br>
+    <br>
+    <div style="font-size: 16px; font-weight: 600;"><%=wfName%> Details</div>
+    <hr>
+    <br>
+    <div>Date: <%= wfCreatedDate %></div>
+    <div>Request Type: <%= wfName %></div>
+    <div>Last Remark: <%= lastRemark %></div>
+    <div>Last Action By: <%= lastActionBy %></div>
+    <div>Last Status: <%= lastStatus %></div>
+    <br>
+    <hr>
+    <a href="<%= actionUrl %>">Click
+        here to Approve and Decline</a>
+</div>
